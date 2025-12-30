@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SafeVault Form</title>
+    <meta charset="utf-8" />
+</head>
+<body>
+    <h2>Submit Data</h2>
+    <form action="/api/users" method="post">
+        <label for="username">Username:</label>
+        <input id="username" name="Username" required pattern="[A-Za-z0-9._-]{3,100}" />
+        <br />
+        <label for="email">Email:</label>
+        <input id="email" name="Email" type="email" required />
+        <br />
+        <label for="password">Password:</label>
+        <input id="password" name="Password" type="password" required minlength="8" />
+        <br />
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

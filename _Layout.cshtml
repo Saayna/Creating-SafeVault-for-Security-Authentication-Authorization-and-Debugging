@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SafeVault</title>
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <header>
+        <nav>
+            <a asp-controller="Account" asp-action="Login">Login</a> |
+            <a asp-controller="User" asp-action="Create">Register</a>
+        </nav>
+    </header>
+    <main role="main">
+        @RenderBody()
+    </main>
+</body>
+</html>
