@@ -5,20 +5,26 @@ SafeVault/
 ├── Program.cs
 ├── Startup.cs (if using .NET 5 style)
 ├── appsettings.json
+
 │
+
 ├── Models/
 │   ├── User.cs
 │   ├── UserInput.cs
 │   ├── LoginViewModel.cs
 │   ├── LoginRequest.cs
 │   ├── RefreshToken.cs
+
 │
+
 ├── Data/
 │   ├── ApplicationDbContext.cs
 │   ├── IUserRepository.cs
 │   ├── UserRepository.cs
 │   ├── MySqlUserRepository.cs
+
 │
+
 ├── Services/
 │   ├── AuthService.cs
 │   ├── InputSanitizer.cs
@@ -26,7 +32,9 @@ SafeVault/
 │   ├── JwtService.cs
 │   ├── RefreshTokenService.cs
 │   ├── UserRoleService.cs
+
 │
+
 ├── Controllers/
 │   ├── AccountController.cs
 │   ├── AuthController.cs
@@ -34,22 +42,30 @@ SafeVault/
 │   ├── AdminController.cs
 │   ├── DashboardController.cs
 │   ├── SecureController.cs
+
 │
+
 ├── Middleware/
 │   ├── SecurityHeadersExtensions.cs
+
 │
+
 ├── Views/
 │   ├── Account/
 │   │   ├── Login.cshtml
 │   │   ├── Register.cshtml
 │   ├── Shared/
 │       ├── _Layout.cshtml
+
 │
+
 ├── wwwroot/
 │   ├── css/
 │   ├── js/
 │   ├── webform.html
+
 │
+
 ├── Tests/
 │   ├── TestInputValidation.cs
 │   ├── TestSqlInjection.cs
@@ -61,9 +77,13 @@ SafeVault/
 │   ├── Tokens.cs
 │   ├── JwtTestHelper.cs
 │   ├── SecurityMessages.cs
+
 │
+
 ├── Migrations/
 │   ├── CreateIdentitySchema.cs
+
 │
+
 └── Properties/
     ├── launchSettings.json
